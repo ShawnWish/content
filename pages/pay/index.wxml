@@ -1,0 +1,62 @@
+<view class="cart_index">
+<view class="cart_receive">
+  <view class="cart_address">
+    <view class="address_left">
+      <view class="user_name">收货人:{{address.userName}}</view>
+      <view class="user_address">{{address.all}}</view>
+    </view>
+    <view class="address_right">
+      {{address.telNumber}}
+    </view>
+  </view>
+  
+</view>
+<view class="cart_content">
+  <view class="shop_title">购物车</view>
+  <!-- 商品详情页面 -->
+  <view class="shop_content" 
+  wx:for="{{newCart}}"
+  wx:key="{{goods_id}}"
+  wx:if="{{newCart.length !== 0}}">
+    <!-- <view class="shop_checkbox">
+      <checkbox-group bindchange="handleChangeCheck"
+      data-id="{{item.goods_id}}">
+        <checkbox checked="{{item.checked}}"></checkbox>
+      </checkbox-group>
+    </view> -->
+    
+    <navigator>
+      <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+    </navigator>
+      
+    
+    <view class="item_right">
+      <view class="item_title">{{item.goods_name}}</view>
+      <view class="item_bottom">
+        <view class="item_price">￥{{item.goods_price}}</view>
+        <view class="item_num">
+          <view class="item_sum">X {{item.num}}</view>
+        </view>
+      </view>    
+    </view>  
+  </view>
+  <view class="shop_empty"
+   wx:if="{{newCart.length === 0}}"
+  >
+    <image mode="widthFix" src="https://gd-hbimg.huaban.com/2c78978142fc2daa8ab53a61e68135516b79bd83c198-U4UySs_fw658/format/webp"></image>
+  </view>
+</view>
+<view class="cart_bottom">
+  <view class="bottom_content">
+    <view class="bottom_top">
+      合计：<view class="bottom_price">￥{{totalPay}}</view>
+    </view>
+    <view class="bottom_item">
+      包含运费
+    </view>
+  </view>
+  <view class="bottom_button" bindtap="handlePay">
+    结算({{totalNum}})
+  </view>
+</view>
+</view>

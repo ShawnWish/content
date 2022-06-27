@@ -1,0 +1,136 @@
+page{
+  padding-bottom: 80rpx;
+}
+.cart_receive button{
+  margin-top: 20rpx;
+}
+.cart_address{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 4rpx solid #F7BDC2;
+}
+.cart_address .address_left{
+  flex: 5;
+}
+.cart_address .address_left .user_address{
+  font-size: 26rpx;
+}
+.cart_address .address_right{
+  flex: 3;
+  text-align: right;
+}
+.shop_title{
+  font-weight: 600;
+  font-size: 34rpx;
+  padding: 10rpx;
+  border-bottom: 4rpx solid #ED5C66;
+}
+.shop_content{
+  display: flex;
+  padding: 10rpx;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+}
+.shop_checkbox checkbox-group checkbox{
+  flex: 1;
+}
+.shop_content navigator{
+  flex: 3;
+}
+.shop_content image{
+  width: 90%;
+}
+.shop_content .item_right{
+  flex: 5;
+  
+}
+.item_right{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid pink; */
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+}
+.item_right .item_title{
+  font-size: 26rpx;
+  color: rgb(141, 134, 134);
+  margin-bottom: 65rpx;
+  /* justify-content: space-between; */
+  /* 第二行出现... */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.item_right .item_bottom{
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+.item_right .item_price{
+  /* text-align: left; */
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.item_right .item_num{
+  /* text-align: right; */
+  display: flex;
+  /* border: 1px solid #ccc; */
+  color: rgb(141, 134, 134);
+}
+.item_num_edit{
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  height: 40rpx;
+  width: 40rpx;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.item_sum{
+  padding: 0 10rpx;
+}
+.cart_bottom{
+  /* box-sizing: border-box; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 80rpx;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+}
+
+.cart_bottom .bottom_check{
+  flex: 2;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-left: 10rpx;
+}
+.cart_bottom .bottom_content{
+  flex: 5;
+  text-align: right;
+  padding-right: 10rpx;
+}
+
+.bottom_content .bottom_price{
+  display: inline;
+  color: var(--themeColor);
+}
+.bottom_content .bottom_item{
+  font-size: 22rpx;
+  /* color: #ED5C66; */
+}
+.cart_bottom .bottom_button{
+  flex: 2;
+  background-color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #fff;
+  align-items: center;
+}

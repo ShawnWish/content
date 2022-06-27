@@ -1,0 +1,48 @@
+.index_swiper swiper image{
+  width: 100%;
+}
+.index_swiper swiper{
+  width: 750rpx;
+  height: 340rpx;
+}
+.index_cate{
+  display: flex;
+}
+.index_cate navigator{
+  flex: 1;
+  padding: 20rpx;
+}
+.index_cate navigator image{
+  width: 100%;
+}
+.index_floor .floor_group .floor_title{
+  padding: 10rpx 0;
+}
+.index_floor .floor_group .floor_title image{
+   width: 100%;
+}
+.floor_list{
+  overflow: hidden;
+  padding: 0 10rpx;
+}
+.floor_list navigator{
+  float: left;
+  width: 33.33%;
+  margin-bottom:-7rpx;
+}
+
+/* 后四个超链接 */
+.floor_list navigator:nth-last-child(-n+4){
+  /* 原图的宽高 232 * 386 232/386  */
+  height: 27.72711207vw;
+  /* height: 27.50vw; */
+  padding-left: 10rpx;
+}
+.floor_list navigator image:nth-child(1),
+.floor_list navigator image:nth-child(2){
+  padding-bottom: 20rpx;
+}
+.floor_list navigator image{
+  width: 100%;
+  height: 100%;
+}
